@@ -12,8 +12,42 @@ html {
   text-size-adjust: 100%;
 
   font-family: sans-serif;
+  text-align: center;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+.carouselle {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.carouselle > li {
+	display: inline;
+}
+
+.carouselle a {
+	background-color: white;
+	border: 3px solid black;
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	display: inline-block;
+}
+
+.carouselle a:hover {
+	background-color: black;
+}
+
+.argyle {
+	display: none;
+	width: 100%;
+}
+
+.argyle:target {
+	width: 100%;
+	display: block;
 }
